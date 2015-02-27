@@ -12,6 +12,8 @@ class Cafe {
 
     @Override
     String toString(){
-        return 'CAFE > ' +id+' '+name+' '+city+' '+neighborhood
+        return String.format(
+                "Cafe [id=%s, name='%s', city='%s', neighborhood='%s']",
+                id, name, city, neighborhood);
     }
 }
